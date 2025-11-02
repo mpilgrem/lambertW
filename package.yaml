@@ -1,0 +1,33 @@
+spec-version: 0.36.0
+
+name:                lambertW
+version:             0.1.0.0
+github:              "mpilgrem/lambertW"
+license:             BSD-3-Clause
+author:              "Mike Pilgrem"
+maintainer:          "public@pilgrem.com"
+copyright:           "Copyright 2025 Mike Pilgrem. All rights reserved."
+
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+description: |
+  A Haskell library providing the Lambert W function.
+
+dependencies:
+- base >= 4.7 && < 5
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+library:
+  source-dirs: src

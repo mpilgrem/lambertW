@@ -1,0 +1,34 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.38.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           lambertW
+version:        0.1.0.0
+description:    A Haskell library providing the Lambert W function.
+homepage:       https://github.com/mpilgrem/lambertW#readme
+bug-reports:    https://github.com/mpilgrem/lambertW/issues
+author:         Mike Pilgrem
+maintainer:     public@pilgrem.com
+copyright:      Copyright 2025 Mike Pilgrem. All rights reserved.
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/mpilgrem/lambertW
+
+library
+  exposed-modules:
+      Numeric.Lambert.W
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
