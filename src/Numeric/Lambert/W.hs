@@ -1,6 +1,7 @@
 module Numeric.Lambert.W
   ( lambertW0
   , safeLambertW0
+  , omega
   ) where
 
 import           Data.Maybe ( fromMaybe )
@@ -43,3 +44,7 @@ safeLambertW0 x
     | otherwise =
         let logx = log x
         in  logx - log logx
+
+-- | An approximation of the Ω constant: Ω × exp(Ω) = 1.
+omega :: Double
+omega = 0.5671432904097838

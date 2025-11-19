@@ -31,3 +31,15 @@ ghc-options:
 
 library:
   source-dirs: src
+
+tests:
+  property:
+    source-dirs: test
+    main: Main.hs
+    ghc-options:
+    - -threaded
+    dependencies:
+    - lambertW
+    - math-functions
+    - tasty
+    - tasty-quickcheck
